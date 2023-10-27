@@ -1,0 +1,41 @@
+so this app directory is the one we use as backend experimental but new and awesome 
+
+
+layout file has children which it shows the children fcome from 
+page.js which is the one we make changes like App.js
+
+global.css is where all the global css go
+
+for routing we dont need react-router-dom we just need to create a folder in App folderand
+there we need to create a folder called About(whatever route we want) and we need to create a Page.js file
+as it works as index.js file and that's it
+
+here all css will be  pure css and its in styles folder and we can use '@/app/styles/navbar.module.css
+
+
+Image and Link work as components in nextjs too and that Css we use as styles.main_component
+import Image from 'next/image'    for image src alt width height necessary
+import Link from 'next/link'        href needed
+
+
+we can use Layout and we can set Header and  Footer there without having to write Header footer for all pages
+
+for fonts we can use import {Mulish } from next/fonts/google
+
+we can use this in Layout page <html where it calls the styles.Mulish, btw fonts has two types variable and static, variable doesnt need to have fontweight but the static need to have fontweight written to work
+we can use this anywhere where the styles not applied like button tag in html
+
+we can use dynamic routing , we need to create a [id] folder and insdie create a page.js which we use to use for dynamic routing 
+and call from the movie page to this /movie/dsfsdf link then it redirects here
+
+for loading effect use loading.io and copy the css from it add it to your className 
+for curvy effect in the background use the shapedivider.app whwere select your preferred css and svg and copy and paste it
+
+the code we did till now we didnt use browser specific stuff like hooks onclick onchange so this is server component ,for making it client ocmponent we need to tell nextjs thatits
+"use client" at the top
+
+so we change nextjs.config.js for adding mongooose and other components we need extra 
+
+we create models where schema and model exists and utils in which dbconnection exists and we use it using fetch the api/contact/ where route.js where we call dbconn and model and then in contactform where we call the backend we fetch and then method POST and then passing headers and data
+
+for throwing all of the nav in small screen display none first the icons and then when screen begins less than 900 px then we can display them and transofmr translateX(100%) which pushes all of the items aside  
