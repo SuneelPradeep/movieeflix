@@ -6,7 +6,7 @@ import styles from '@/app/styles/common.module.css'
 const page = async() => {
  
    await new Promise( resolve => setTimeout(resolve, 1000))
-  const url = process.env.URL;
+  const url = process.env.MAINURL;
  const options = {
 	method: 'GET',
 	headers: {
