@@ -26,7 +26,7 @@ const page = async ({params}) => {
       </div>
       <div>
         <h1> {id_data?.title} ({(id_data?.releaseYear)}) </h1>
-         <span style={{display:'flex',flexDirection:'row',gap:'1.5rem',fontSize:'1.6rem',marginTop:'1rem'}}>Genres : {id_data?.genres?.map(item=> (<h6 style={{display:'flex',flexDirection:'row',color :'grey',justifyContent:'flex-start',alignItems:'center',fontSize:'1.2rem'}}>{item.name} </h6>))}</span>
+         <span style={{display:'flex',flexDirection:'row',gap:'1.5rem',fontSize:'1.6rem',marginTop:'1rem'}}>Genres : {id_data?.genres?.map((item,id)=> (<h6 key={id} style={{display:'flex',flexDirection:'row',color :'grey',justifyContent:'flex-start',alignItems:'center',fontSize:'1.2rem'}}>{item.name} </h6>))}</span>
          {id_data?.type==='show' &&<span style={{display:'flex',flexDirection:'row',gap:'1.5rem',fontSize:'1.6rem',marginTop:'1rem'}}>Seasons : <span style={{fontSize:'1.5rem'}}>{id_data?.type==='show' ? id_data?.seasonCount : ''} </span></span>}
         <p> {id_data?.synopsis} </p>
       </div>

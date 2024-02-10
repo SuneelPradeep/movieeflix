@@ -56,7 +56,7 @@
 }
 
 .navbarItem a:hover:before {
-    animation: coolNavLine .4s linear forwards;
+    animation: coolNavLine .4s linear backwards;
 }
 
 @keyframes coolNavLine {

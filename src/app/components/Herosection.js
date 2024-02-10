@@ -17,7 +17,7 @@ const Herosection = ({title,img}) => {
             <div className={styles.grid_two_section}>
                 <div className={heroStyles.hero_content}>
                     <h1>{title} </h1>
-                    <p> From award-winning dramas to blockbuster action movies, weapons. I've got you covered. Browse our selection of the 
+                    <p> From award-winning dramas to blockbuster action movies, weapons. I have got you covered. Browse our selection of the 
                         and latest greatest movies, and find your favourite today. </p>
                     <Link href='/movie' ><button className={mulish.className}> Explore Movies </button></Link>
                 </div>
