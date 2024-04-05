@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    staticPageGenerationTimeout: 200000,
     experimental :{
         serverComponentsExternalPackages : ["mongoose"],
     },
